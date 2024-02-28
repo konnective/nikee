@@ -1,0 +1,136 @@
+.product-detail {
+    // background-color: #b81818;
+    // height: 50rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+
+    .product-detail-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 100rem;
+
+        .image-container {
+            flex: 1;
+
+            img {
+                height: 32rem;
+                object-fit: contain;
+            }
+        }
+
+        .info-container {
+            flex: 2;
+            display: flex;
+            flex-direction: column;
+
+            .product-detail-price {
+                color: #FC440F;
+                font-size: 45px;
+                font-weight: 300;
+            }
+
+            .qty-wrapper {
+                display: flex;
+
+                .plus {
+                    padding: 15px;
+                    background-color: #ece3e3;
+                    cursor: pointer;
+                }
+
+                .qty-input {
+                    width: 30px;
+                    padding: 15px;
+
+                    input {
+                        text-align: center;
+                    }
+                }
+            }
+
+            .btn-wrapper {
+                display: flex;
+
+                .product-detail-btn {
+                    margin: 15px 20px 0px 0px;
+                    background-color: #f2f230;
+                    color: black;
+                    padding: 15px 25px;
+                    font-size: 15px;
+                    width: max-content;
+                    cursor: pointer;
+
+                    &:hover {
+                        background-color: #adad13;
+                    }
+                }
+
+                .product-detail-btn2 {
+                    margin: 15px 0px 0px 0px;
+                    background-color: #c2f261;
+                    color: black;
+                    padding: 15px 25px;
+                    font-size: 15px;
+                    width: max-content;
+                    cursor: pointer;
+
+                    &:hover {
+                        background-color: #6a921a;
+                    }
+                }
+            }
+        }
+    }
+
+
+
+
+
+
+
+
+
+    $small: 1400px;
+    $medium: 900px;
+
+    //some CSS
+    @media screen and (max-width: $small) {
+
+        .product-detail-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+
+
+            .image-container {
+
+                // display: none;
+                img {
+                    height: 10rem;
+                    width: auto;
+                    object-fit: contain;
+                }
+
+            }
+
+            .info-container {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                p {
+                    display: none;
+                    font-size: 25rem;
+                }
+            }
+        }
+    }
+
+
+}

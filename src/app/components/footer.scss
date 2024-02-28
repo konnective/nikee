@@ -1,0 +1,60 @@
+.footer_container {
+    background-color: #c2f261;
+    display: flex;
+    width: 100%;
+
+
+    .left {
+        flex: 1;
+        display: flex;
+        // align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 20px;
+
+        .footer-logo {
+            font-size: 35px;
+        }
+    }
+
+    .center {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        font-size: 20px;
+
+        ul {
+            li {
+                list-style-type: none;
+            }
+        }
+    }
+
+    .right {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        font-size: 20px;
+    }
+
+
+
+    $small: 1400px;
+    $medium: 900px;
+
+    //some CSS
+    @media screen and (max-width: $small) {
+
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 15px 0px 0px 0px;
+
+    }
+}
